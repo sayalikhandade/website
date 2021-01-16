@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import { Switch, Route, Redirect } from "react-router-dom";
+import About from "./About";
+import Contact from "./Contact";
+import Services from "./Services";
+import Navbar from "./Navbar";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  
+  <BrowserRouter>
+  <App/>
+  
+    </BrowserRouter>,
   document.getElementById('root')
 );
 
